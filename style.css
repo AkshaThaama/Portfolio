@@ -315,6 +315,9 @@ form input, form textarea{
 
     
 }
+.btn-cv{
+    display: none;
+}
 
 .yes{
     background-color: #ff004f;
