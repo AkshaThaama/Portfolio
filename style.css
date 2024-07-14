@@ -8,7 +8,12 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #080808;
+    background: #080808;
+    
+    /* background: linear-gradient(135deg, #000000, #0A1F44, #000000); */
+   
+  
+    
     color: white;
 }
 /* ----------------------------------HEADER------------------------------------------------- */
@@ -20,13 +25,38 @@ body{
     background-image: url(./images/akshat\ profile.jpeg);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position:right;
     z-index: 1;
+}
+
+.toggle-button{
+    margin-top: 20px;
+}
+#toggle{
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background: linear-gradient(135deg, #1E1F47, #FF6347); /* Dark blue to red gradient */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-left: 150px;
+    margin-top: 50px;
+
+
+}
+#toggle:hover {
+    background: linear-gradient(135deg, #2E2F67, #FF847B); /* Slightly lighter shades on hover */
 }
 
 #name{
     letter-spacing: 2px;
     user-select: none;
+    
 }
 span{
     color: rgb(34, 34, 255);
@@ -45,6 +75,7 @@ span{
     list-style: none;
     display: flex;
     gap: 2rem;
+
     
 
 }
@@ -100,7 +131,14 @@ span{
     height: 400px;
     object-fit: cover;
     object-position: top;
-    border-radius: 15px;
+     border-radius: 10px;
+     transition: box-shadow 0.3s ease-in-out; /* Smooth transition */
+     transition: transform 0.3s ease-in-out;
+         
+
+}
+.about-col1 img:hover{
+    transform: scale(1.1);
 }
 
 .about-col1{
@@ -315,10 +353,10 @@ form input, form textarea{
 
     
 }
+
 .btn-cv{
     display: none;
 }
-
 .yes{
     background-color: #ff004f;
     cursor: pointer;
@@ -340,7 +378,6 @@ form input, form textarea{
         #name{
             font-size: 25px;
             user-select: none;
-
         }
     
     .header-text{
